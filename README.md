@@ -47,18 +47,21 @@ python -m http.server
 
 Then open `http://localhost:8000`.
 
-## Mobile View
+## Mobile Views
 
 The homepage is optimized for mobile screens, with a single-column layout for the hero content, development pillars, progress report, and community posts.
 
-![सूर्यपुरा portal mobile view](mobile-view.png)
+![सूर्यपुरा portal mobile view 1](MobileView1.png)
+
+![सूर्यपुरा portal mobile view 2](MobileView2.png)
 
 ## Project Structure
 
 ```text
 Assignment/
 ├── index.html       # Complete homepage demo
-├── mobile-view.png  # Mobile homepage screenshot
+├── MobileView1.png  # Mobile homepage screenshot 1
+├── MobileView2.png  # Mobile homepage screenshot 2
 └── README.md        # Project documentation
 ```
 
