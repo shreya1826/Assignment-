@@ -279,6 +279,60 @@
     color:var(--ink);
   }
 
+  /* ===== COMMUNITY POSTS ===== */
+  .community{
+    background:#EADFC5;
+    padding:70px 0 76px;
+  }
+  .post-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:22px;
+  }
+  .post{
+    background:var(--cream);
+    border:1px solid var(--line);
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    min-height:245px;
+  }
+  .post-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:14px;
+    margin-bottom:22px;
+  }
+  .post-channel{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:14px;
+    font-weight:600;
+  }
+  .post-avatar{
+    width:34px;
+    height:34px;
+    display:grid;
+    place-items:center;
+    background:var(--indigo);
+    color:var(--gold-soft);
+    font-family:'Baloo 2', sans-serif;
+    font-size:16px;
+    border-radius:50%;
+  }
+  .post-date{font-size:12px; color:#776b5d; white-space:nowrap;}
+  .post h3{font-size:20px; margin-bottom:10px; color:var(--indigo);}
+  .post p{font-size:14px; color:#4a4238; line-height:1.7;}
+  .post-link{
+    margin-top:auto;
+    padding-top:20px;
+    color:var(--clay);
+    font-size:13.5px;
+    font-weight:600;
+  }
+
   /* ===== DIGITAL IDENTITY CTA ===== */
   .id-band{
     background:var(--gold);
@@ -351,6 +405,7 @@
     .foot-grid{grid-template-columns:1fr 1fr;}
     .hero-stats{flex-wrap:wrap;}
     .hero-stat{flex:0 0 50%; margin-bottom:16px; border-right:none;}
+    .post-grid{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -523,6 +578,35 @@
         <div class="bar-track"><div class="bar-fill" style="width:45%"></div></div>
         <div class="pct">45%</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="community" id="community">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>सूर्यपुरा की आवाज़</h2>
+      <p>गांव के काम, लोगों की भागीदारी और छोटे बदलावों की बड़ी कहानी।</p>
+    </div>
+    <div class="post-grid">
+      <article class="post">
+        <div class="post-head">
+          <div class="post-channel"><span class="post-avatar">स</span><span>सूर्यपुरा पंचायत</span></div>
+          <span class="post-date">आज, 10:30 बजे</span>
+        </div>
+        <h3>नई सड़क, नई रफ़्तार</h3>
+        <p>बरवा टोला की 4.5 किमी सड़क का काम पूरा हुआ। अब स्कूल, मंडी और स्वास्थ्य केंद्र तक पहुंच पहले से आसान है।</p>
+        <a class="post-link" href="#ledger">प्रगति रिपोर्ट देखें →</a>
+      </article>
+      <article class="post">
+        <div class="post-head">
+          <div class="post-channel"><span class="post-avatar">क</span><span>किसान साथी समूह</span></div>
+          <span class="post-date">कल, 16:15 बजे</span>
+        </div>
+        <h3>खेत से सीधे बाजार तक</h3>
+        <p>इस हफ्ते 42 किसानों ने डिजिटल मंडी समूह से जुड़कर अपनी उपज की बोली साझा की। मिलकर सही दाम की ओर एक कदम।</p>
+        <a class="post-link" href="#pillars">किसान कल्याण देखें →</a>
+      </article>
     </div>
   </div>
 </section>
